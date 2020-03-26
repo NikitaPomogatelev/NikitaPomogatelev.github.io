@@ -1,0 +1,167 @@
+.header
+    background: $main-bg
+    display: grid
+    grid-template-columns: 1fr 4fr 2fr 1fr
+    grid-template-rows: 1fr 1fr
+    align-items: center
+    padding: 0 1%
+
+    // padding: 30px  0
+    position: relative
+    &__light
+        position: absolute
+        top: 0
+        left: 15%
+        transform: translateX(-15%)
+        z-index: 4
+        overflow: hidden
+        
+        // width: 60%
+        // height: 50%
+    .header-img
+        height: 450px
+        width: 600px
+        object-fit: cover
+        object-position: 45% 0
+        
+    &__title
+        font-size: 44px
+        font-weight: 700
+        max-width: 710px
+        margin-bottom: 40px
+    &__text
+        grid-column: 2/3
+        grid-row: 1/2
+        margin-top: 130px
+        z-index: 3
+        
+    &-list
+        padding-left: 30px
+        &__item
+            font-size: 20px
+            font-weight: 400
+            margin-bottom: 20px
+            position: relative
+            padding-left: 30px
+            &::before
+                content: ''
+                display: block
+                width: 9px
+                height: 9px
+                background: lighten($main-color, 10%)
+                filter: blur(4px)
+                position: absolute
+                top: 0
+                left: 0
+                transform: translateY(50%)
+            &:last-child
+                margin-bottom: 60px
+    &__button
+        margin-left: 100px
+        position: relative
+        z-index: 5
+
+        
+    &__image
+        grid-column: 3/4
+        grid-row: 1/2
+        justify-self: start
+        margin-top: 130px
+    &-info
+        background-color: #292929
+        padding: 95px 100px
+        grid-row: 2/3
+        grid-column: 2/4
+        position: relative
+        transform: translateY(90%)
+    &__description
+        text-align: center
+        font-size: 22px
+        font-weight: 400
+        line-height: 150%
+        max-width: 676px
+        margin: auto
+        
+    &__sm-image
+        display: none
+        
+.corner
+    &-left, &-right
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 140px
+        height: 80px
+    
+    &-left
+        position: absolute
+        top: -10px
+        left: -40px
+        transform: rotate(-45deg)
+    &-right
+        position: absolute
+        top: -10px
+        right: -40px
+        transform: rotate(45deg)
+    &__line
+        display: block
+        width: 97px
+        height: 8px
+        background: #383838
+        margin-bottom: 7px
+        border-radius: 12px
+.long_line
+    width: 130px
+
+@media (max-width: 1200px)
+    .header
+        &__title
+            font-size: 36px
+        &-list
+            &__item
+                font-size: 16px
+        &__image
+            grid-column: 3/5
+   
+
+@media (max-width: 768px)
+    .header
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(2, auto)
+        padding: 0 15px
+        &__title
+            font-size: 22px
+            margin-top: 110px
+            text-align: center
+        &__text
+            font-size: 24px
+            grid-row: 1/2
+            grid-column: 1/4
+            margin-top: 20px
+        &__image
+            display: none
+        &__sm-image
+            display: block
+            text-align: center
+        &__light
+            width: 100%
+            left: 54%
+            transform: translateX(-50%)
+
+            
+            
+        &__button
+            display: block
+            margin: auto
+            padding: 14px 68px
+        &-info
+            grid-column: 1/4
+            padding: 50px 20px
+        &__description
+            font-size: 16px
+            
+    .corner
+        &-left, &-right
+            display: none
+

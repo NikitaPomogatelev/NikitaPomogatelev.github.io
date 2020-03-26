@@ -1,0 +1,90 @@
+.working
+    background: darken($secondary-bg, 75%)
+    &__title
+        margin-bottom: 40px
+    &-row
+        grid-row: 2/3
+        grid-column: 2/4
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(25%, max-content))
+        justify-content: space-between
+        margin-bottom: 40px
+        
+    &-col
+        text-align: center
+        display: grid
+        grid-template-rows: 100px auto
+        justify-items: center
+        
+    &__number
+        font-size: 96px
+        font-weight: 700
+    &__description
+        font-size: 24px
+        font-weight: 400
+        max-width: 230px
+    &__next
+        grid-row: 3/4
+        grid-column: 2/4
+        text-align: center
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 120px
+    &__arrow
+        margin-left: 24px
+    &__form
+        grid-row: 4/5
+        grid-column: 2/4
+.form
+    text-align: center
+    width: 90%
+    justify-self: center
+    &__title
+        font-size: 36px
+        font-weight: 700
+        padding: 0 15px
+        background: darken($secondary-bg, 75%)
+    &__subtitle
+        display: block
+        margin: 30px auto
+        font-size: 18px
+        font-weight: 400
+        line-height: 150%
+        
+    &__input
+        display: block
+        margin: 60px auto
+    &__button
+        margin: auto
+        margin-bottom: 60px
+        
+        
+        
+
+@media (max-width: 1200px)
+    .working
+        &-row
+            grid-template-columns: repeat(auto-fill, minmax(50%, max-content))
+
+@media (max-width: 768px)
+    .working    
+        &-row, &__title
+            grid-column: 1/3
+        &-col
+            grid-template-rows: 50px
+        &__number
+            font-size: 48px
+        &__description
+            font-size: 16px
+            max-width: 135px
+            align-self: center
+        &__form, &__next
+            grid-column: 1/4
+    .form
+        width: 100%
+        &__title
+            font-size: 20px   
+        &__subtitle
+            font-size: 14px
+
+        
