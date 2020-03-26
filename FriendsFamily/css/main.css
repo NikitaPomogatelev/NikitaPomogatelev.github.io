@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:300,800&display=swap&subset=cyrillic");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 14px;
+  background: #fcfcfc;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  background: #F8F8F8;
+  -webkit-box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
+          box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+header .all-header {
+  width: 60%;
+  margin: 0 20%;
+}
+
+header .all-header .lang {
+  text-align: right;
+  width: 100%;
+}
+
+header .all-header .lang a {
+  color: #c4c4c4;
+  font-weight: 800;
+}
+
+header .all-header .lang a.active, header .all-header .lang a:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+header .all-header .header-main {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .all-header .header-main .menu-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .all-header .header-main .menu-search #search {
+  width: 316px;
+  height: 44px;
+  background: #ECECEC;
+  text-indent: 20px;
+  border: 0;
+  outline: none;
+}
+
+header .all-header .header-main .menu-search .btn-search {
+  width: 44px;
+  height: 44px;
+  background: #FFF000;
+  text-align: center;
+  max-height: 44px;
+  cursor: pointer;
+}
+
+header .all-header .header-main .join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .all-header .header-main .join .btn {
+  cursor: pointer;
+  width: 86px;
+  height: 40px;
+  border: 2px solid #000;
+  font-weight: 800;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 20px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+header .all-header .header-main .join .btn.reg {
+  width: 140px;
+  background: #000;
+  color: #fff;
+}
+
+header .all-header .header-main .join .btn.come:hover {
+  background: #000;
+  color: #fff;
+}
+
+header .all-header .header-main a {
+  font-weight: 800;
+  color: #000;
+  cursor: pointer;
+}
+
+header .all-header .header-main a:hover {
+  color: #c4c4c4;
+}
+
+main {
+  width: 100%;
+}
+
+main .section {
+  width: 60%;
+  margin: 50px 20%;
+}
+
+main .section h3 {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+main .section h3 span {
+  content: "";
+  margin-bottom: 6px;
+  height: 2px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 15px;
+  background: #000;
+  margin-right: 15px;
+}
+
+main .section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main .section .content .img-block {
+  width: 30%;
+  margin: 20px 2%;
+  position: relative;
+}
+
+main .section .content .img-block:first-of-type {
+  margin-left: 0px;
+}
+
+main .section .content .img-block h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+main .section .content .img-block img {
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .section .content .img-block img:hover {
+  -webkit-box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
+}
+
+main .section .content .img-block .play {
+  border-radius: 50%;
+  background-color: #FFF000;
+  opacity: 0;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(40% - 64px / 2);
+  left: calc(50% - 64px / 2);
+  background: url("../img/play-icon.png");
+  background-size: cover;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+main .section .content .img-block:hover .play {
+  opacity: 1;
+}
+
+main .section .play-list {
+  background-color: #000;
+  width: 60px;
+  height: 60px;
+  color: #FFF000;
+  position: absolute;
+  right: -5px;
+  bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .section .play-list .fa-play {
+  font-size: 20px;
+  line-height: 60px;
+}
+
+footer {
+  background: #111111;
+  padding: 40px 0;
+  color: #FFFFFF;
+}
+
+footer .footer-cont {
+  width: 60%;
+  margin: 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-cont .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10px;
+}
+
+footer .footer-cont .social .lnk a {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin: auto 10px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+footer .footer-cont .social .lnk a:hover {
+  color: #FFF000;
+}
+
+@media (max-width: 1500px) {
+  header .all-header .header-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .all-header .header-main > div {
+    margin-top: 20px;
+  }
+  footer .footer-cont {
+    width: 70%;
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 1500px) and (max-width: 768px) {
+  header .all-header .header-main .menu-search {
+    width: 300px;
+  }
+  main .section {
+    width: 80%;
+    margin: 20px 10%;
+  }
+  main .section .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .section .content .img-block {
+    width: 100%;
+    margin: 20px 0;
+  }
+  footer .footer-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-cont > div {
+    margin-bottom: 10px;
+    width: 100px;
+  }
+  footer .footer-cont .social {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

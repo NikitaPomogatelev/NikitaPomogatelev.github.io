@@ -1,0 +1,13 @@
+$main-color: #ff4d87;
+
+@mixin btn {
+    width: 200px;
+    height: 60px;
+    background: none;
+    color: #333;
+    font-size: 12px;
+    line-height: 60px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
