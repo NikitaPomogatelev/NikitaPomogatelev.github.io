@@ -15,6 +15,26 @@ ul
     .container
         grid-template-columns: 1fr
         padding: 0 20px
+    
+
+.price-dot
+    display: none
+    border: none
+    background: $dot-color
+    width: 5px
+    height: 12px
+    border-radius: 50%
+    margin: 0 10px
+    opacity: 0.25
+.active
+    opacity: 1
+
+
+.price-dots
+    display: flex
+    justify-content: center
+    margin-top: 30px
+    
 
 .list
     width: 737px
@@ -89,6 +109,10 @@ body
         border-bottom: 2px solid $main-color
 
 @media (min-width: 1200px)
+    .section
+        &-title
+            font-size: 22px
+            line-height: 1.2
     .list
         &__item
             &::after
@@ -104,19 +128,14 @@ body
                 &::after
                     opacity: 1
 
-
-@media (max-width: 1200px)
-    .section
-        &-title
-            font-size: 22px
-            line-height: 1.2
-
 @media (max-width: 768px)
     .section
         &-title
             font-size: 20px
     .input
         font-size: 16px
+    .price-dot
+        display: inline-block
        
         
 

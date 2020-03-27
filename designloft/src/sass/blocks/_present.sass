@@ -1,0 +1,89 @@
+.present
+    background: darken($secondary-bg, 75%)
+    &-title
+        font-size: 28px
+        font-weight: 700
+        max-width: 535px
+    &-description
+        font-size: 18px
+        font-weight: 400
+        max-width: 475px
+    &-first
+        grid-row: 2/3
+        grid-column: 2/4
+        display: grid
+        grid-template-columns: repeat(12, minmax(60px, minmax(max-content, 1fr)))
+        grid-template-rows: repeat(4, minmax(200px, auto-fit))
+        grid-auto-flow: auto
+        grid-auto-columns: minmax(max-content, 1fr)
+       
+        align-items: center
+        
+        grid-gap: 30px
+        &__text
+            grid-column: span 6
+            grid-row: 1/3
+            align-self: start
+            margin-top: 60px
+      
+        &__img
+            
+            align-self: center
+            justify-self: center
+            &:nth-child(1)
+                justify-self: start
+                grid-column: span 6
+                grid-row: 1/3
+            &:nth-child(2)
+                justify-self: start
+                max-height: 400px
+                grid-column: span 3
+                grid-row: 3/5
+                
+                
+            &:nth-child(3)
+                max-height: 200px
+                
+                grid-column: span 4
+                grid-row: 3/4
+            &:nth-child(4)
+                max-height: 200px
+                grid-column: span 4
+                grid-row: 4/5    
+            &:nth-child(5) 
+                grid-column: span 5
+                grid-row: 3/5
+    &-second
+        grid-row: 3/4
+        grid-column: 2/4
+        display: grid
+        grid-template-columns: repeat(12, minmax(60px, auto))
+        grid-template-rows: repeat(4, minmax(200px, auto-fit))
+        grid-auto-columns: minmax(max-content, 1fr)
+
+        &__text
+            grid-column: span 6
+            grid-row: 1/2
+            // align-self: start
+            margin-top: 60px
+            border: 2px solid red
+        &__img
+            &:nth-child(1)
+                grid-column: span 6
+                grid-row: 1/2
+                border: 2px solid red
+                
+
+@media (max-width: 1200px)
+    .present
+        &-first
+            grid-gap: 10px
+        &-title
+            font-size: 20px
+        &-description
+            font-size: 12px
+    
+                
+                
+            
+        

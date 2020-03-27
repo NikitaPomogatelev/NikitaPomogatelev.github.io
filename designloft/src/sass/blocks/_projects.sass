@@ -7,17 +7,19 @@
         grid-row: 2/3
         grid-column: 2/4
         display: grid
-        grid-template-columns: repeat(4, auto-fill)
+        grid-template-columns: repeat(4, auto)
         grid-template-rows: repeat(4, auto)
         align-self: center
-        justify-self: center
-        // grid-auto-flow: column
+        // justify-self: center
+        justify-content: center
+        grid-auto-columns: fill-content(20%)
         grid-gap: 30px
         margin-bottom: 80px
           
     &__img
         align-self: center
         position: relative
+        
         // justify-self: center
         &:nth-child(1)
             grid-column: 1/2
@@ -82,11 +84,6 @@
         margin-right: 15px
     &__arrow
         margin-left: 15px
-        
-            
-
-    &__subtitle
-        
     &__button
         grid-row: 3/4
         grid-column: 2/4
