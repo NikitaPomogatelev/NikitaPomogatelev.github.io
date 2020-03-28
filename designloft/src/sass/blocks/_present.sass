@@ -1,5 +1,7 @@
 .present
     background: darken($secondary-bg, 75%)
+    &__title
+        
     &-title
         font-size: 28px
         font-weight: 700
@@ -12,13 +14,13 @@
         grid-row: 2/3
         grid-column: 2/4
         display: grid
-        grid-template-columns: repeat(12, minmax(60px, minmax(max-content, 1fr)))
-        grid-template-rows: repeat(4, minmax(200px, auto-fit))
-        grid-auto-flow: auto
         grid-auto-columns: minmax(max-content, 1fr)
-       
-        align-items: center
+        grid-template-columns: repeat(12, minmax(60px, minmax(max-content, 1fr)))
+        // grid-template-rows: repeat(4, minmax(200px, auto-fit))
+        // grid-auto-flow: auto
+        // grid-auto-columns: minmax(max-content, 1fr)
         
+        align-items: center
         grid-gap: 30px
         &__text
             grid-column: span 6
@@ -27,7 +29,6 @@
             margin-top: 60px
       
         &__img
-            
             align-self: center
             justify-self: center
             &:nth-child(1)
@@ -53,25 +54,8 @@
             &:nth-child(5) 
                 grid-column: span 5
                 grid-row: 3/5
-    &-second
-        grid-row: 3/4
-        grid-column: 2/4
-        display: grid
-        grid-template-columns: repeat(12, minmax(60px, auto))
-        grid-template-rows: repeat(4, minmax(200px, auto-fit))
-        grid-auto-columns: minmax(max-content, 1fr)
-
-        &__text
-            grid-column: span 6
-            grid-row: 1/2
-            // align-self: start
-            margin-top: 60px
-            border: 2px solid red
-        &__img
-            &:nth-child(1)
-                grid-column: span 6
-                grid-row: 1/2
-                border: 2px solid red
+                
+    
                 
 
 @media (max-width: 1200px)
@@ -87,3 +71,5 @@
                 
             
         
+
+      

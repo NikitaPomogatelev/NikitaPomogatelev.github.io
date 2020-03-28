@@ -110,9 +110,7 @@ body
 
 @media (min-width: 1200px)
     .section
-        &-title
-            font-size: 22px
-            line-height: 1.2
+        
     .list
         &__item
             &::after
@@ -127,6 +125,12 @@ body
             &:hover
                 &::after
                     opacity: 1
+
+@media (max-width: 1200px)
+    .section
+        &-title
+            font-size: 22px
+            line-height: 1.2
 
 @media (max-width: 768px)
     .section
