@@ -1,0 +1,32 @@
+.process
+    background: darken($secondary-bg, 75%)
+    &-row
+        grid-row: 2/3
+        grid-column: 2/4
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(25%, max-content))
+        grid-auto-rows: 140px auto
+        justify-content: space-around
+        margin-bottom: 40px
+
+    &-col
+        text-align: center
+        display: grid
+        grid-template-rows: 100px auto
+        justify-items: center
+        opacity: 0.1
+        &:nth-child(1)
+            opacity: 1
+            
+    &__number
+        font-size: 144px
+        font-weight: 700
+        color: $dot-number
+    &__subtitle
+        font-size: 18px
+        font-weight: 400
+    &__dot
+        width: 15px
+        height: 15px
+        background: #FFC846
+        filter: blur(4px)

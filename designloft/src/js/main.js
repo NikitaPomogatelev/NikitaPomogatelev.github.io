@@ -23,5 +23,9 @@ $(function(){
                 margin: 30,
             },
         }
-    })
+    });
+
+    $('.heroes').owlCarousel({
+        items: 1,
+    });
 });

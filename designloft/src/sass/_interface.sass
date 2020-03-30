@@ -108,6 +108,29 @@ body
         outline: none
         border-bottom: 2px solid $main-color
 
+.form
+    text-align: center
+    width: 90%
+    justify-self: center
+    &__title
+        font-size: 36px
+        font-weight: 700
+        padding: 0 15px
+        background: darken($secondary-bg, 75%)
+    &__subtitle
+        display: block
+        margin: 30px auto
+        font-size: 18px
+        font-weight: 400
+        line-height: 150%
+        
+    &__input
+        display: block
+        margin: 60px auto
+    &__button
+        margin: auto
+        margin-bottom: 60px
+
 @media (min-width: 1200px)
     .section
         
@@ -140,6 +163,12 @@ body
         font-size: 16px
     .price-dot
         display: inline-block
+    .form
+        width: 100%
+        &__title
+            font-size: 20px   
+        &__subtitle
+            font-size: 14px
        
         
 
