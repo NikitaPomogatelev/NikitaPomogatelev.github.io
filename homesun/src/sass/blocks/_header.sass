@@ -1,0 +1,73 @@
+.header
+    padding-top: 20px
+    padding-bottom: 40px
+    background: url('../img/header/header-bg.jpg') center center no-repeat
+    background-size: cover
+    min-height: 829px
+    color: $text-light
+    &-contacts
+        text-align: right
+        &__description
+            +reg
+            font-size: 14px
+            display: block
+            margin-bottom: 10px
+        &__phone
+            +bold
+            font-size: 20px
+            text-decoration: none
+            color: $text-light
+    &-text
+        text-align: center
+        margin-top: 180px
+        
+        &__title
+            +medium
+            font-size: 60px
+            text-transform: uppercase
+        &__course
+            text-transform: uppercase
+            +reg
+            font-size: 20px
+        &__place
+            text-transform: none
+            display: block
+            font-size: 16px
+            margin-top: 20px
+            margin-bottom: 100px
+    &-socials
+        margin-top: 130px
+.socials
+    display: flex
+    justify-content: center
+    
+    &__link
+        display: inline-flex
+        width: 25px
+        height: 25px
+        align-items: center
+        justify-content: center
+        border: 2px solid $border-light
+        border-radius: 50%
+        margin: 0px 10px
+
+@media (max-width: 768px)
+    .header
+        background: url('../img/header/header-bg.jpg') 49% top  no-repeat
+        background-size: cover
+        &-contacts
+            &__description
+                font-size: 12px
+            &__phone
+                font-size: 16px
+        &-text
+            &__title
+                font-size: 30px
+            &__course
+                font-size: 14px
+            &__place
+                font-size: 12px
+        &-socials
+            margin-top: 190px
+
+    
