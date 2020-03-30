@@ -1,0 +1,47 @@
+.about
+    background-color: $main-bg
+    padding: 50px 0
+    &-info
+        text-align: left
+        &__title
+            font-size: 36px
+            +medium
+        &__tour
+            display: block
+            +medium
+            font-size: 60px
+            text-transform: uppercase
+            margin-top: 15px
+        &__description
+            +light
+            max-width: 400px
+            margin: 0px
+            margin-bottom: 40px
+    &-list
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+            &:nth-last-of-type()
+                margin-bottom: 0px
+                
+        &__image
+            margin-right: 20px
+        &__text
+            font-size: 18px
+            +medium
+            text-transform: uppercase
+
+@media (max-width: 991px)
+    .about
+        &__image
+            text-align: center
+
+@media (max-width: 768px)
+    .about
+        &-info
+            &__title
+                font-size: 22px
+            &__tour
+                font-size: 30px
+            

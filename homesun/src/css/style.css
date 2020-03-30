@@ -4213,10 +4213,20 @@ html {
           box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Muller', sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -4337,6 +4347,78 @@ body {
   }
   .header-socials {
     margin-top: 190px;
+  }
+}
+
+.about {
+  background-color: #f8f2e4;
+  padding: 50px 0;
+}
+
+.about-info {
+  text-align: left;
+}
+
+.about-info__title {
+  font-size: 36px;
+  font-family: 'Muller', sans-serif;
+  font-weight: 500;
+}
+
+.about-info__tour {
+  display: block;
+  font-family: 'Muller', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.about-info__description {
+  font-family: 'Muller', sans-serif;
+  font-weight: 300;
+  max-width: 400px;
+  margin: 0px;
+  margin-bottom: 40px;
+}
+
+.about-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-list__item:nth-last-of-type() {
+  margin-bottom: 0px;
+}
+
+.about-list__image {
+  margin-right: 20px;
+}
+
+.about-list__text {
+  font-size: 18px;
+  font-family: 'Muller', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .about__image {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-info__title {
+    font-size: 22px;
+  }
+  .about-info__tour {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
