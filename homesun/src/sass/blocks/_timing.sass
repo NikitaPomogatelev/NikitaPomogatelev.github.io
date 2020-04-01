@@ -1,0 +1,74 @@
+.timing
+    &__title
+        margin-bottom: 100px
+    &-list
+        justify-content: center
+        &__item
+            max-width: 23%
+            background-color: $list-color
+            text-align: center
+            +medium
+            margin-bottom: 20px
+            margin-right: 2%
+            padding: 20px
+        &__date
+            display: block
+            font-size: 14px
+            
+            margin-bottom: 19px
+        &__title
+            font-size: 18px
+            
+            margin: 0
+            margin-bottom: 20px
+        &__link
+            display: block
+            font-size: 12px
+            
+            margin-bottom: 20px
+            
+                
+    &__button
+        font-size: 12px
+        +bold
+        color: $main-color
+        border: 2px solid $main-color
+        padding: 13px 29px
+        transition: all 0.3s ease-in-out
+        
+@media (min-width: 1200px)
+    .timing
+        &__button
+            &:hover
+                background: $main-color
+                color: $text-light
+
+
+
+@media (max-width: 1200px)
+    .timing
+        &__button
+            &:active
+                background: $main-color
+                color: $text-light
+
+@media (max-width: 993px)
+    .timing
+        &-list
+            &__item
+                max-width: 31%
+
+@media (max-width: 768px)
+    .timing
+        &-list
+            &__item
+                max-width: 46%
+            &__date
+            &__title
+                font-size: 12px
+            &__link
+        &__button
+            font-size: 12px
+            padding: 8px
+        
+

@@ -1,0 +1,20 @@
+.features
+    background-color: $secondary-bg
+    &__title
+        margin-bottom: 100px
+    &__item
+        text-align: center
+    &__subtitle
+        +medium
+        font-size: 16px
+
+@media (max-width: 576px)
+    .features
+        &__item
+            margin-bottom: 40px
+            &:last-of-type
+                margin-bottom: 0
+        &__subtitle
+            max-width: 250px
+            margin: auto
+            margin-top: 20px
