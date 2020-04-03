@@ -1,0 +1,36 @@
+.info
+    background-color: $secondary-bg
+    &__title
+    &__description
+        font-size: 18px
+        +medium
+        text-align: center
+        
+        max-width: 940px
+        margin: 0 auto
+        margin-top: 100px
+    &__program
+        font-size: 24px
+        +medium
+        text-align: center
+        margin-bottom: 60px
+    &__text
+        font-size: 18px
+        +reg
+    &__img
+        text-align: center
+
+@media (max-width: 768px)
+    .info
+        &__description
+            font-size: 14px
+        &__program
+            font-size: 20px
+        &__img
+            margin-bottom: 20px
+        &__text
+            margin: 0 auto
+            text-align: center
+            font-size: 16px
+            max-width: 320px
+            margin-bottom: 30px
