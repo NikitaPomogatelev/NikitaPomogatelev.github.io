@@ -36,12 +36,12 @@
 
 @font-face {
     font-family: 'Muller';
-    src: url('MullerBold.eot');
+    src: url('../fonts/Muller/MullerBold.eot');
     src: local('Muller Bold'), local('MullerBold'),
-        url('MullerBold.eot?#iefix') format('embedded-opentype'),
-        url('MullerBold.woff2') format('woff2'),
-        url('MullerBold.woff') format('woff'),
-        url('MullerBold.ttf') format('truetype');
+        url('../fonts/Muller/MullerBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Muller/MullerBold.woff2') format('woff2'),
+        url('../fonts/Muller/MullerBold.woff') format('woff'),
+        url('../fonts/Muller/MullerBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }

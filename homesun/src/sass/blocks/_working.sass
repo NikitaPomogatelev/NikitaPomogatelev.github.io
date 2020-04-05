@@ -1,0 +1,46 @@
+.working
+
+    &__subtitle
+        text-align: center
+        display: block
+        margin: 60px auto
+        color: $text-primary
+    &-list
+        &__item
+            text-align: center
+            color: $text-primary
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                right: -10%
+                top: 20%
+                // transform: translateY(-50%)
+                display: block
+                width: 25px
+                height: 17px
+                background: url('../img/working/right-arrow.svg') center center no-repeat
+            &:last-of-type
+                &::after
+                    display: none
+                
+             
+
+
+        &__img
+            margin-bottom: 20px
+            
+        &__description
+            font-size: 12px
+            +reg
+        &__link
+            display: block
+            font-size: 12px
+            +reg
+            color: $link-color
+@media (max-width: 768px)
+    .working
+        &-list
+            &__item
+                &::after
+                    display: none

@@ -1,0 +1,92 @@
+.price
+    background-color: $main-bg
+    &-offer
+        margin-top: 90px
+        margin-bottom: 50px
+        padding: 0
+        background-color: #fff
+        &__item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 20px
+            padding: 0 5.9%
+            &:first-of-type
+                padding-top: 5.7%
+            &:last-of-type
+                margin-bottom: 0
+                padding: 15px 5.9%
+                background-color: $offer-bg
+                +bold
+            
+        &__text
+            font-size: 21px
+            +medium
+        &__day
+            +bold
+        &__tag
+            font-size: 20px
+            +medium
+            color: $price-color
+        &__value
+            +bold
+    &__button
+        color: $main-color
+        font-size: 12px
+        +bold
+        border: 2px solid $main-color
+        padding: 14px 40px
+        margin: 0
+    &__subtitle
+
+        text-align: center
+        font-size: 24px
+        +medium
+    &__not
+        text-transform: uppercase
+    &-list
+        color: $text-weight
+        &__item
+            margin-bottom: 18px
+            display: flex
+            align-items: flex-start
+            &:last-of-type
+                margin-bottom: 0
+        &__icon
+            width: 14px
+            height: 10px
+            text-align: center
+            margin-right: 20px
+            
+        &__description
+            display: inline-block
+    &__description
+        font-size: 18px
+        +medium
+        display: block
+        margin-top: 50px
+        text-align: center
+        color: $text-dark
+
+
+@media (max-width: 991px)
+    .price
+        &-offer
+            &__tag
+                display: flex
+                flex-direction: column
+                align-items: center
+
+@media (max-width: 768px)
+    .price
+        &-offer
+            &__text
+                font-size: 16px
+            &__tag
+                font-size: 16px
+            &__item
+                &:last-of-type
+                    flex-direction: column
+                    .price-offer__text
+                        text-align: center
+                        margin-bottom: 20px

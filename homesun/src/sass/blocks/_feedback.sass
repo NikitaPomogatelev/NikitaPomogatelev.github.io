@@ -26,6 +26,7 @@
         background: transparent
         border: none
         outline: none
+        cursor: pointer
     &-prev
         left: 0
     &-next
@@ -46,6 +47,16 @@
             background-color: transparent
             border: 1px solid $dot-color
             transform: scale(1.5)
+
+@media (max-width: 768px)
+    .feedback
+        &-slider
+            &__img
+                margin-bottom: 20px
+            &__text
+                text-align: center
+                padding: 0 2%
+    
             
         
         
