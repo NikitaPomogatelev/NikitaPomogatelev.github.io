@@ -26,21 +26,6 @@ ul {
   }
 }
 
-.price-dot {
-  display: none;
-  border: none;
-  background: #c4c4c4;
-  width: 5px;
-  height: 12px;
-  border-radius: 50%;
-  margin: 0 10px;
-  opacity: 0.25;
-}
-
-.active {
-  opacity: 1;
-}
-
 .price-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +34,18 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
+}
+
+.price-dot {
+  display: none;
+  padding: 0;
+  border: none;
+  background: #c4c4c4;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 10px;
+  opacity: 0.25;
 }
 
 .list {
@@ -217,7 +214,12 @@ body {
     font-size: 16px;
   }
   .price-dot {
-    display: inline-block;
+    display: block;
+  }
+  .price-dot.active {
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   .form {
     width: 100%;
@@ -429,23 +431,14 @@ body {
 }
 
 .header {
-  background: #131313;
+  background: url("../img/header/light.png") 10% top no-repeat;
+  background-color: #131313;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-}
-
-.header__light {
-  position: absolute;
-  top: 0;
-  left: 15%;
-  -webkit-transform: translateX(-15%);
-          transform: translateX(-15%);
-  z-index: 4;
-  overflow: hidden;
 }
 
 .header .header-img {
@@ -595,6 +588,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .header {
+    background: url("../img/header/light.png") left top no-repeat;
+    background-color: #131313;
+  }
   .header__title {
     font-size: 36px;
   }
@@ -610,6 +607,8 @@ body {
 
 @media (max-width: 768px) {
   .header {
+    background: url("../img/header/light.png") 40% top no-repeat;
+    background-color: #131313;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: (auto)[2];
@@ -1224,6 +1223,8 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .projects__img:nth-child(-n+3), .projects__img:nth-child(n+6) {
     display: none;

@@ -25,7 +25,9 @@ $(function(){
         }
     });
 
-    $('.heroes').owlCarousel({
-        items: 1,
-    });
+    // $('.process-slider').owlCarousel({
+    //     items: 1,
+    //     dots: false,
+    //     nav: false,
+    // });
 });

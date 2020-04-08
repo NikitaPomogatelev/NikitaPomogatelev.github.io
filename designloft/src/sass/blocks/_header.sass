@@ -1,20 +1,10 @@
 .header
-    background: $main-bg
+    background: url('../img/header/light.png') 10% top no-repeat
+    background-color: $main-bg
     display: grid
     align-items: center
-
-    // padding: 30px  0
     position: relative
-    &__light
-        position: absolute
-        top: 0
-        left: 15%
-        transform: translateX(-15%)
-        z-index: 4
-        overflow: hidden
-        
-        // width: 60%
-        // height: 50%
+   
     .header-img
         height: 450px
         width: 600px
@@ -112,6 +102,8 @@
 
 @media (max-width: 1200px)
     .header
+        background: url('../img/header/light.png') left top no-repeat
+        background-color: $main-bg
         &__title
             font-size: 36px
         &-list
@@ -123,6 +115,8 @@
 
 @media (max-width: 768px)
     .header
+        background: url('../img/header/light.png') 40% top no-repeat
+        background-color: $main-bg
         grid-template-columns: 1fr
         grid-template-rows: repeat(2, auto)
         padding: 0 15px
