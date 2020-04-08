@@ -1,0 +1,58 @@
+.hero
+    background: url('../img/hero/chair-bg.jpg') center center no-repeat
+    min-height: 580px
+    position: relative
+    &-block
+        text-align: right
+        display: flex
+        flex-direction: column
+        padding-top: 80px
+        position: relative
+        z-index: 20
+        
+    &__title
+        font-size: 41px
+        +medium
+        color: $text-dark
+        max-width: 600px
+        margin-left: auto
+        margin-bottom: 19px
+    &__subtitle
+        font-size: 27px
+        +reg
+        color: $main-color
+        margin-bottom: 66px
+    &__form
+        background-color: $light
+        padding: 6%
+        margin-left: auto
+        box-shadow: 0 0 38px rgba(104, 176, 201, 0.34)
+        border-radius: 20px
+    &-overlay
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        width: 100%
+        height: 100%
+        background-color: $light
+        opacity: 0.65
+        display: none
+
+
+@media (max-width: 768px)
+    .hero
+        background: url('../img/hero/chair-bg.jpg') 30% center  no-repeat
+        &-block
+            text-align: center
+        &__title
+            font-size: 20px
+            max-width: 393px
+            margin: 0 auto
+            margin-bottom: 10px
+        &__subtitle
+            font-size: 14px
+        &-overlay
+            display: block
+        &__form
+            margin: auto
