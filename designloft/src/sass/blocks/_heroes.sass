@@ -3,3 +3,26 @@
     grid-column: 2/4
 .hero
     display: flex
+    align-items: center
+    &-text
+        width: 60%
+    &__img
+        width: 40%
+    &__description
+        max-width: 540px
+    &__title
+        display: block
+        margin: 0
+        font-size: 32px
+        line-height: 39px
+        font-weight: 700
+        max-width: 445px
+        position: relative
+        margin-bottom: 20px
+        &::after
+            content: ''
+            display: block
+            width: 70px
+            height: 4px
+            background: $main-color
+            margin-top: 20px

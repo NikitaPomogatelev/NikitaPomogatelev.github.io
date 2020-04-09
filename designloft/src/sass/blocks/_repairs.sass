@@ -1,0 +1,39 @@
+.repair
+    background: $main-bg
+    &__form
+        grid-column: 2/4
+        grid-row: 1/2
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-text
+        &__title
+            font-size: 32px
+            font-weight: 700
+        &__description
+            display: block
+            font-size: 22px
+            font-weight: 400
+            max-width: 508px
+    &__input
+        display: block
+        font-size: 18px
+        text-align: left
+
+    &-wrap
+        position: relative
+        &::after
+            content: ''
+            background: url('../img/arrow-right.png') center no-repeat
+            color: red
+            position: absolute
+            right: 0
+            top: 50%
+            display: block
+            width: 50px
+            height: 10px
+        
+       
+            
+            
+            
