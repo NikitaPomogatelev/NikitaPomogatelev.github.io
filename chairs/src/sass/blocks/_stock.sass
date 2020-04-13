@@ -1,0 +1,72 @@
+.stock 
+    background: url('../img/stock/stock-bg.jpg') center center no-repeat
+    background-size: cover
+    min-height: 490px
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 70px
+        padding-bottom: 50px
+    &-info
+        text-align: center
+    &__title
+        font-size: 26px
+        +medium
+        text-transform: uppercase
+    &__discount
+        font-size: 55px
+        display: block
+    &__present
+        font-size: 25px
+        +medium
+        color: $main-color
+    &-form
+        margin-top: 50px
+        border: 5px solid $form-border
+        border-radius: 23px
+        padding: 30px 20px
+        
+        &__row
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            align-items: center
+            color: $text-red
+            font-size: 14px
+            +medium
+            margin-bottom: 35px
+        &__before
+            display: block
+            text-align: left
+        &__date
+            display: block
+            font-size: 30px
+            color: $light
+            +medium
+            background: url('../img/stock/calendar.png') center center no-repeat
+            width: 48px
+            height: 43px
+            line-height: 43px
+            margin: 0 20px
+        &__after
+            display: block
+        &__button
+            display: block
+            margin: 0 auto
+    &__old
+        text-decoration: line-through
+        font-size: 18px
+        +light
+        color: #1e1e1e
+        padding-bottom: 10px
+    &__new
+        font-size: 30px
+        +medium
+        color: $text-red
+        padding-top: 9px
+
+@media (max-width: 768px)
+    .stock
+        &-block
+            flex-direction: column

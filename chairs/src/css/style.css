@@ -4213,14 +4213,20 @@ html {
           box-sizing: border-box;
 }
 
-.container {
-  max-width: 960px;
+body {
+  color: #535353;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
 }
 
 a {
   font-size: 14px;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   color: #68b0c9;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -4273,6 +4279,43 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 15px;
 }
 
+.section {
+  padding-top: 80px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  margin-bottom: 80px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle__line {
+  width: 80%;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4301,6 +4344,8 @@ h1, h2, h3, h4, h5 {
 .hero {
   background: url("../img/hero/chair-bg.jpg") center center no-repeat;
   min-height: 580px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   position: relative;
 }
 
@@ -4313,7 +4358,6 @@ h1, h2, h3, h4, h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 80px;
   position: relative;
   z-index: 20;
 }
@@ -4376,6 +4420,254 @@ h1, h2, h3, h4, h5 {
   }
   .hero__form {
     margin: auto;
+  }
+}
+
+.about {
+  background-color: #ffffff;
+}
+
+.about-col:nth-of-type(2) {
+  border: 2px solid red;
+}
+
+.about-row {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.about-row::after {
+  content: '';
+  display: block;
+  width: 210px;
+  height: 53px;
+}
+
+.about-row:first-of-type::after {
+  background: url("../img/about/first-arrow.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: -35px;
+}
+
+.about-row:nth-of-type(2)::after {
+  background: url("../img/about/second-arrow.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: -35px;
+}
+
+.about-row:last-of-type::after {
+  background: url("../img/about/third-arrow.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: -35px;
+}
+
+.about-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-text__title {
+  font-size: 30px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  color: #68b0c9;
+  margin-bottom: 30px;
+}
+
+.about-text__info {
+  font-size: 18px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  max-width: 400px;
+}
+
+.about-text:nth-of-type(2) {
+  text-align: right;
+}
+
+.about-text:nth-of-type(2) .about-text__info {
+  margin: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .about-row::after {
+    display: none;
+  }
+  .about-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-text {
+    text-align: center;
+  }
+}
+
+.stock {
+  background: url("../img/stock/stock-bg.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 490px;
+}
+
+.stock-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.stock-info {
+  text-align: center;
+}
+
+.stock__title {
+  font-size: 26px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  text-transform: uppercase;
+}
+
+.stock__discount {
+  font-size: 55px;
+  display: block;
+}
+
+.stock__present {
+  font-size: 25px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  color: #68b0c9;
+}
+
+.stock-form {
+  margin-top: 50px;
+  border: 5px solid #ffffff;
+  border-radius: 23px;
+  padding: 30px 20px;
+}
+
+.stock-form__row {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d35656;
+  font-size: 14px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  margin-bottom: 35px;
+}
+
+.stock-form__before {
+  display: block;
+  text-align: left;
+}
+
+.stock-form__date {
+  display: block;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  background: url("../img/stock/calendar.png") center center no-repeat;
+  width: 48px;
+  height: 43px;
+  line-height: 43px;
+  margin: 0 20px;
+}
+
+.stock-form__after {
+  display: block;
+}
+
+.stock-form__button {
+  display: block;
+  margin: 0 auto;
+}
+
+.stock__old {
+  text-decoration: line-through;
+  font-size: 18px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  color: #1e1e1e;
+  padding-bottom: 10px;
+}
+
+.stock__new {
+  font-size: 30px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  color: #d35656;
+  padding-top: 9px;
+}
+
+@media (max-width: 768px) {
+  .stock-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.stat {
+  background-color: #ffffff;
+  padding-bottom: 70px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item__number {
+  font-size: 48px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  color: #68b0c9;
+  background: url("../img/stat/stat-chair.png") center top no-repeat;
+  height: 94px;
+  line-height: 94px;
+  margin-bottom: 20px;
+}
+
+.stat-item__info {
+  font-size: 18px;
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  color: #535353;
+}
+
+@media (max-width: 768px) {
+  .stat-item {
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

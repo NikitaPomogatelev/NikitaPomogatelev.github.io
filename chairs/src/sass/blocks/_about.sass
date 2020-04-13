@@ -1,0 +1,84 @@
+.about
+    background-color: $light
+    &-col
+        &:nth-of-type(2)
+            border: 2px solid red
+            
+    &-row
+        margin-bottom: 50px
+        position: relative
+        &::after
+            content: ''
+            display: block
+            width: 210px
+            height: 53px
+        &:first-of-type
+            
+            &::after
+                background: url('../img/about/first-arrow.png') center no-repeat
+                background-size: cover
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                margin-top: -35px
+        &:nth-of-type(2)
+            
+            &::after
+                background: url('../img/about/second-arrow.png') center no-repeat
+                background-size: cover
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                margin-top: -35px
+        &:last-of-type
+            &::after
+                background: url('../img/about/third-arrow.png') center no-repeat
+                background-size: cover
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                margin-top: -35px
+            
+    &-col
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-text
+        &__title
+            font-size: 30px
+            +medium
+            color: $main-color
+            margin-bottom: 30px
+        &__info
+            font-size: 18px
+            +light
+            max-width: 400px
+        &:nth-of-type(2)
+            text-align: right
+            .about-text__info
+                margin: 0
+                margin-left: auto  
+
+@media (max-width: 768px)
+    .about
+        &-row
+            &::after
+                display: none
+        &-col
+            flex-direction: column
+            // &:first-child
+                
+            //     border: 2px dotted red
+                
+        &-text
+            text-align: center
+
+
+                
+            
+                
+            
+
