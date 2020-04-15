@@ -1,0 +1,42 @@
+.modal
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($modal-overlay , 0.8)
+    z-index: 99
+    display: none
+    &_active
+        display: flex
+    &-dialog
+        position: relative
+        margin: auto
+        max-width: 300px
+        width: 90%
+        min-height: 240px
+        background-color: #fff
+        text-align: center
+        box-shadow: 0 0 38px rgba(104, 176, 201, 0.34)
+        border-radius: 20px
+        padding: 25px 0
+        &__close
+            background: transparent
+            border: none
+            outline: none
+            position: absolute
+            top: -30px
+            right: -10px
+            cursor: pointer
+        &__title
+            font-size: 20px
+            +medium
+            color: $main-color
+            margin-bottom: 14px
+        &__description
+            display: block
+            font-size: 12px
+            +light
+            margin-bottom: 19px
+        &__input
+            margin-bottom: 15px

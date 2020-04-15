@@ -1,0 +1,28 @@
+.address
+    background-color: #ecf3f8
+    padding-bottom: 50px
+    &-contacts
+        text-align: center
+
+.contacts
+    font-size: 16px
+    +light
+    color: $text-dark
+    &__info
+        display: block
+        margin: 19px 0
+    &__title
+        font-size: 20px
+        +medium
+        color: $main-color
+        margin-bottom: 50px
+@media (max-width: 768px)
+    .address
+        &-line
+            flex-direction: column-reverse
+        &-contacts
+            margin-bottom: 30px
+        
+        
+
+    

@@ -17,7 +17,7 @@ p
     margin: 0
     padding: 0
 
-button
+.button
     outline: none
     border: none
     text-transform: uppercase
@@ -28,6 +28,20 @@ button
     box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1)
     padding: 17px 40px
     border-radius: 23px
+    cursor: pointer
+    transition: all 0.3s ease
+
+@media (min-width: 992px)
+    .button
+        &:hover
+            background-color: lighten($main-color, 3%)
+@media (max-width: 992px)
+    .button
+        &:active
+            background-color: lighten($main-color, 3%)
+            
+            
+
 
 h1, h2, h3, h4, h5
     margin: 0

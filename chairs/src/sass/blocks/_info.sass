@@ -1,0 +1,157 @@
+.info
+    background-color: $light
+    padding-bottom: 80px
+    &-overlay
+        display: none
+    &-row
+        justify-content: center
+        align-items: center
+        font-size: 22px
+        +medium
+         
+    &__usual
+        color: $text-dark
+        margin-right: 60px
+        text-align: right
+    &__main
+        color: $main-color
+    &-block
+        background-image: url('../img/info/info-image.png')
+        background-position: 48% center
+        background-repeat: no-repeat
+        min-height: 300px
+        margin-top: 35px
+    
+    &-list
+        list-style: none
+        font-size: 15px
+        +medium
+        justify-content: space-between
+        text-align: center
+        line-height: 1.2
+        &__item
+            max-width: 208px
+            // margin: 0 auto
+            margin-bottom: 30px
+            position: relative
+                
+        &_usual
+            text-align: right
+            color: $text-dark
+        &_main
+            text-align: left
+            margin-left: auto
+            color: $main-color
+            margin-right: 20%
+    // &-line
+    //     display: flex
+
+.info-1
+    &::after
+        content: ''
+        display: block
+        width: 81px
+        height: 41px
+        background: url('../img/info/info-arrow-1.png') center center no-repeat
+        position: absolute
+        right: -65%
+        top: 5px
+.info-2
+    &::after
+        content: ''
+        display: block
+        width: 87px
+        height: 29px
+        background: url('../img/info/info-arrow-2.png') center center no-repeat
+        position: absolute
+        right: -65%
+        top: 5px
+.info-3
+    &::after
+        content: ''
+        display: block
+        width: 87px
+        height: 23px
+        background: url('../img/info/info-arrow-3.png') center center no-repeat
+        position: absolute
+        right: -65%
+        top: -10px
+.info-4
+    &::after
+        content: ''
+        display: block
+        width: 85px
+        height: 34px
+        background: url('../img/info/info-arrow-4.png') center center no-repeat
+        position: absolute
+        right: -65%
+        top: -20px
+.info-5
+    &::after
+        content: ''
+        display: block
+        width: 82px
+        height: 42px
+        background: url('../img/info/info-arrow-5.png') center center no-repeat
+        position: absolute
+        left: -65%
+        top: 10px
+.info-6
+    &::after
+        content: ''
+        display: block
+        width: 86px
+        height: 30px
+        background: url('../img/info/info-arrow-6.png') center center no-repeat
+        position: absolute
+        left: -65%
+        top: 10px
+.info-7
+    &::after
+        content: ''
+        display: block
+        width: 88px
+        height: 22px
+        background: url('../img/info/info-arrow-7.png') center center no-repeat
+        position: absolute
+        left: -65%
+        top: -5px
+.info-8
+    &::after
+        content: ''
+        display: block
+        width: 84px
+        height: 34px
+        background: url('../img/info/info-arrow-8.png') center center no-repeat
+        position: absolute
+        left: -65%
+        top: -10px
+
+@media ( max-width: 991px)
+    .info-1, .info-2, .info-3, .info-4, .info-5, .info-6, .info-7, .info-7, .info-8
+        &::after
+            display: none
+    .info
+        position: relative
+        &-row
+            position: relative
+            z-index: 99
+        &-list
+            position: relative
+            z-index: 99 
+        &-overlay
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: $light
+            opacity: 0.85
+            z-index: 88
+
+@media (max-width: 769px)
+    .info
+        &-row
+            font-size: 16px  
+    

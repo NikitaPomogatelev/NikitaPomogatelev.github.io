@@ -1,0 +1,19 @@
+.footer
+    background-color: $light
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 0
+    &__description
+        font-size: 14px
+        +light
+        color: $text-dark
+
+@media (max-width: 768px)
+    .footer
+        &-block
+            flex-direction: column
+        &__link
+            margin: 10px 0
+

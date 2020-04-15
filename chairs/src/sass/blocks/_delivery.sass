@@ -1,0 +1,62 @@
+.delivery
+    background: url('../img/delivery/delivery-bg.jpg') center center no-repeat
+    background-size: cover
+    min-height: 348px
+    padding-top: 40px
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__form
+        text-align: center
+        padding: 12px
+        margin-right: 10%
+    &__discount
+        font-size: 17px
+        +medium
+        color: $main-color
+        margin-bottom: 20px
+    &__old
+        font-size: 14px
+        +light
+        color: $text-dark
+        text-decoration: line-through
+        margin-bottom: 7px
+    &__new
+        font-size: 24px
+        +medium
+        color: $text-red
+        margin-top: 9px
+    &__title
+        font-size: 20px
+        +medium
+        color: $text-dark
+        margin-bottom: 12px
+        max-width: 227px
+    &__subtitle
+        font-size: 20px
+        +medium
+        color: $main-color
+        display: block
+        margin: 0 auto
+        width: 233px
+        height: 29px
+        background: $light
+        line-height: 29px
+        margin-bottom: 30px
+    &__input
+        display: block
+        margin: 0 auto
+        margin-bottom: 20px
+    &__button
+
+@media ( max-width: 768px )
+    .delivery
+        background: url('../img/delivery/delivery-bg.jpg') right center no-repeat
+        background-size: cover
+        &-block
+            flex-direction: column
+            align-items: center
+        &__form
+            margin: 0
+    

@@ -1,5 +1,6 @@
 .hero
     background: url('../img/hero/chair-bg.jpg') center center no-repeat
+    background-size: cover
     min-height: 580px
     padding-top: 80px
     padding-bottom: 60px
@@ -8,9 +9,6 @@
         text-align: right
         display: flex
         flex-direction: column
-        
-        position: relative
-        z-index: 20
         
     &__title
         font-size: 41px
@@ -31,14 +29,6 @@
         box-shadow: 0 0 38px rgba(104, 176, 201, 0.34)
         border-radius: 20px
     &-overlay
-        position: absolute
-        top: 0
-        left: 0
-        display: block
-        width: 100%
-        height: 100%
-        background-color: $light
-        opacity: 0.65
         display: none
 
 
@@ -46,6 +36,8 @@
     .hero
         background: url('../img/hero/chair-bg.jpg') 30% center  no-repeat
         &-block
+            position: relative
+            z-index: 99
             text-align: center
         &__title
             font-size: 20px
@@ -56,5 +48,13 @@
             font-size: 14px
         &-overlay
             display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: $light
+            opacity: 0.85
+            z-index: 88
         &__form
             margin: auto

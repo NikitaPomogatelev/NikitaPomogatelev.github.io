@@ -1,0 +1,113 @@
+.features
+    
+    background-color: $light
+    padding-bottom: 70px
+    &-overlay
+        display: none
+    &-block
+        background-image: url('../img/features/features-chair.png')
+        background-position: center center
+        background-repeat: no-repeat
+        min-height: 333px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__title
+
+        font-size: 20px
+        +medium
+        color: $main-color
+        margin-bottom: 19px
+        
+            
+    &__info
+        font-size: 14px
+        +light
+        &:nth-of-type(2)
+            border: 2px solid red
+    &__img
+        text-align: center
+    &__item
+        
+        &:nth-child(1)
+            text-align: left
+        &:nth-of-type(1)
+            text-align: right
+            
+.feature-1
+    
+    position: relative
+    &::after
+        content: ''
+        display: block
+        width: 122px
+        height: 109px
+        background: url('../img/features/arrow-1.png') center center no-repeat
+        background-size: cover
+        position: absolute
+        right: -40%
+        top: 0
+        margin-top: 10px
+.feature-2
+    
+    &::after
+        content: ''
+        display: block
+        width: 150px
+        height: 78px
+        background: url('../img/features/arrow-2.png') center center no-repeat
+        position: absolute
+        left: -44%
+        top: -40px
+        
+    
+.feature-3
+    
+    &::after
+        content: ''
+        display: block
+        width: 144px
+        height: 54px
+        background: url('../img/features/arrow-3.png') center center no-repeat
+        position: absolute
+        right: -40%
+        top: -40px
+.feature-4
+    
+    &::after
+        content: ''
+        display: block
+        width: 143px
+        height: 54px
+        background: url('../img/features/arrow-4.png') center center no-repeat
+        position: absolute
+        left: -43%
+        top: 5px
+
+@media ( max-width: 991px  )
+    .feature-1, .feature-2, .feature-3, .feature-4
+        &::after
+            display: none
+    
+
+@media ( max-width: 768px  )
+    .features
+        background-color: #fff
+        position: relative
+        &-overlay
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: $light
+            opacity: 0.85
+            z-index: 88
+        &-row
+            flex-direction: column
+        &__item
+            margin-bottom: 30px
+            position: relative
+            z-index: 99
+    
