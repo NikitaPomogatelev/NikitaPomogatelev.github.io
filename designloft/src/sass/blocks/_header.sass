@@ -4,7 +4,7 @@
     display: grid
     align-items: center
     position: relative
-        
+
     &__title
         grid-column: 2/3
         grid-row: 1/2
@@ -13,7 +13,7 @@
         max-width: 710px
         margin-bottom: 40px
         margin-top: 140px
-        
+
     &-list
         grid-column: 2/3
         grid-row: 2/3
@@ -35,7 +35,7 @@
                 top: 0
                 left: 0
                 transform: translateY(50%)
-                
+
             &:last-child
                 margin-bottom: 60px
     &__button
@@ -46,7 +46,6 @@
         grid-row: 3/4
         grid-column: 2/3
 
-        
     &__image
         grid-column: 3/4
         grid-row: 1/4
@@ -60,7 +59,9 @@
         width: 90%
         position: relative
         transform: translateY(70%)
+        margin: 0 auto
         margin-top: -5%
+
     &__description
         text-align: center
         font-size: 22px
@@ -68,7 +69,6 @@
         line-height: 150%
         max-width: 676px
         margin: auto
-        
 
 .corner
     &-left, &-right
@@ -78,7 +78,7 @@
         justify-content: center
         width: 140px
         height: 80px
-    
+
     &-left
         position: absolute
         top: -10px
@@ -110,7 +110,6 @@
                 font-size: 16px
         &__image
             grid-column: 3/5
-   
 
 @media (max-width: 768px)
     .header
@@ -133,11 +132,7 @@
         &-list
             grid-row: 3/4
             grid-column: span 4
-            
-            
 
-            
-            
         &__button
             grid-row: 4/5
             grid-column: 1/2
@@ -150,8 +145,7 @@
             padding: 50px 20px
         &__description
             font-size: 16px
-            
+
     .corner
         &-left, &-right
             display: none
-

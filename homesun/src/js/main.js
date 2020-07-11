@@ -1,5 +1,7 @@
 $(function() {
 
+ 
+  
 
   $('#news-slider').owlCarousel({
     loop:true,
@@ -39,4 +41,15 @@ $('#feedback-slider').owlCarousel({
   items: 1,
 
 });
+
+  var item = $('.owl-item');
+  isHave = true;
+
+    if (item.hasClass('active')) {
+    $('.news-overlay').fadeTo(500, 1)
+  } else {
+    $('.news-overlay').fadeOut(0, 0)
+  }
+
+
 })

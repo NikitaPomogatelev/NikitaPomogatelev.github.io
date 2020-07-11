@@ -4782,10 +4782,6 @@ ul {
   opacity: 0.2;
 }
 
-.news-slider__item.active .news-overlay {
-  opacity: 1;
-}
-
 .news-overlay {
   position: absolute;
   left: 3%;
