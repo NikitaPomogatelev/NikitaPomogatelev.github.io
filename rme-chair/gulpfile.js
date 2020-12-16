@@ -65,7 +65,7 @@ const copyFonts = () => {
 
 const resources = () => {
     return src('./src/assets/resources/**')
-    .pipe(dest(dist))
+    .pipe(dest(dist + 'assets/resources/'))
     
 }
 
