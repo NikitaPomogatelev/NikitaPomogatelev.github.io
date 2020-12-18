@@ -27,7 +27,7 @@
             max-height: 15px
     &-count
         display: inline-block
-        width: 40px
+        width: 42px
 
 .tape-top
     display: flex
@@ -77,11 +77,14 @@
         +circe-bold
 
         white-space: nowrap
-        transition: background-color .3s ease
+        transition: background-color .4s ease, box-shadow .4s ease
 
         @media (min-width: 1200px)
             &:hover
-                background-color: darken($color-accent, 10%)
+                background-color: darken($color-accent, 5%)
+                box-shadow: 0 4px 15px rgba(50,101,177,.35)   
+            &:active
+                box-shadow: 0 4px 15px rgba(50,101,177,.35)
         @media (max-width: 768px)
             padding: 16px
             width: 70%

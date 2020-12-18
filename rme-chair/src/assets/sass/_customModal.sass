@@ -42,9 +42,9 @@
     align-items: center
     max-width: 368px
     margin: 0 auto
-    .js-validate-error-label
-        margin-top: -23px
-        margin-bottom: 10px
+    .just-validate-tooltip-container
+        width: 100%
+        
     input
         width: 100%
         padding: 10px 20px
@@ -59,9 +59,27 @@
     padding: 10px 20px
     background-color: $color-accent
     padding: 15px 37px
+    transition: background-color .4s ease, box-shadow .4s ease
+    @media (min-width: 1200px)
+        &:hover
+            background-color: darken($color-accent, 5%)
+            box-shadow: 0 4px 15px rgba(50,101,177,.35)   
+        &:active
+            box-shadow: 0 4px 15px rgba(50,101,177,.35)
     
     +circe-bold
     color: $color-white
     border-radius: 50px
     transition: background-color .3s ease
+
+.patent-container
+    max-width: 80%
+    background: transparent
+    .modal-close
+        right: 1%
+        top: 2%
+        svg
+            display: block
+            object-fit: cover
+            fill: $color-white
             

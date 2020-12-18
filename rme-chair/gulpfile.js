@@ -13,7 +13,8 @@ const {src, dest, parallel, series, watch} = require('gulp'),
       rename = require('gulp-rename'),
       fs = require('fs'),
       ttf2woff = require('gulp-ttf2woff'),
-      ttf2woff2 = require('gulp-ttf2woff2');
+      ttf2woff2 = require('gulp-ttf2woff2'),
+      tiny = require('gulp-tinypng-compress');
 
 
 const dist = './dist/'
@@ -46,7 +47,7 @@ const copyHtml = () => {
 }
 
 const copyImg = () => {
-    return src('./src/assets/img/**.{jpg,jpeg,png}')
+    return src('./src/assets/img/**/*.{jpg,jpeg,png,ico,webmanifest,xml}')
     .pipe(dest(dist + 'assets/img'))
     
 }
@@ -62,6 +63,8 @@ const copyFonts = () => {
     .pipe(dest(dist + 'assets/fonts/'));
     
 }
+
+
 
 const resources = () => {
     return src('./src/assets/resources/**')
@@ -128,7 +131,7 @@ const watchFiles = () => {
 
     watch('./src/assets/sass/**/*.{sass, scss}', styles);
     watch('./src/**/*.html', copyHtml);
-    watch('./src/assets/img/**.{jpg,jpeg,png}', copyImg);
+    watch('./src/assets/img/**/*.{jpg,jpeg,png,ico,webmanifest,xml}', copyImg);
     watch('./src/assets/fonts/**/*.*', copyFonts);
     watch('./src/assets/img/**/*.svg', svgSprites);
     watch('./src/js/**/*.js', scripts);
@@ -160,6 +163,18 @@ const stylesBuild = () => {
     .pipe(browserSync.stream());
 
 }
+
+const tinypng = () => {
+    // return src('./src/assets/img/*.{jpg,jpeg,png')
+    return src(['./src/assets/img/**.jpg', './src/assets/img/**.png', './src/assets/img/**.jpeg'])
+    .pipe(tiny({
+        key: 'BQR7Cjv4gGyTy4yKj79zn4XdH137jlyy',
+        log: true
+    }))
+    .pipe(dest(dist + './assets/img'))
+}
+
+exports.tinypng = tinypng;
 
 const scriptsBuild = () => {
     return src('./src/js/main.js')
@@ -196,31 +211,25 @@ const scriptsBuild = () => {
     .pipe(dest(dist + 'js'))
 }
 
-exports.build = series(clean, parallel(copyHtml, scriptsBuild, resources, copyImg, svgSprites), stylesBuild, watchFiles);
+const minSvgSprites = () => {
+    return src('src/assets/img/svg/*.svg')
+    .pipe(svgmin({
+        js2svg: {
+            pretty: true
+        }
+    }))
+    .pipe(svgSprite({
+        mode: {
+            stack: {
+                sprite: "../sprite.svg"
+            }
+        }
+    }))
+    .pipe(dest(dist + 'assets/img'));
+}
+
+exports.minSvgSprites = minSvgSprites;
+
+exports.build = series(clean, parallel(copyHtml, copyFonts, scriptsBuild, resources, minSvgSprites), stylesBuild, tinypng);
 
 
-// const svgSprites = () => {
-//     return src('src/assets/img/**/*.svg')
-//         .pipe(svgmin({
-//             js2svg: {
-//                 pretty: true
-//             }
-//         }))
-//         .pipe(cheerio({
-//             run: function($) {
-//                 // $('[fill]').removeAttr('fill');
-//                 // $('[stroke]').removeAttr('stroke');
-//                 $('[style]').removeAttr('style');
-//             },
-//             parserOptions: {xmlMode: true}
-//         }))
-//         .pipe(replace('&gt;', '>'))
-//         .pipe(svgSprite({
-//             mode: {
-//                 stack: {
-//                     sprite: "../sprite.svg"
-//                 }
-//             }
-//         }))
-//         .pipe(dest(dist + 'assets/img'));
-// }

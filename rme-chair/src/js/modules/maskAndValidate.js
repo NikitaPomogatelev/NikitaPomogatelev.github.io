@@ -1,4 +1,4 @@
-import JustValidate from '../../../node_modules/just-validate/dist/js/just-validate';
+import JustValidate from '../just-validate';
 import Inputmask from "inputmask";
 
 let inputs = document.querySelectorAll('input[type="tel"]');
@@ -40,9 +40,7 @@ validateForms('.modal-form', {
     tel: { 
         required: true 
     },
-    messages: {
-        minLength: 'Это обязательное поле',
-    }
+
 });
 
 validateForms('.tape__form', {

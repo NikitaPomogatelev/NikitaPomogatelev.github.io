@@ -30,6 +30,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^3.0.0",
+    "gulp-tinypng-compress": "^1.2.5",
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "webpack": "^4.44.1",

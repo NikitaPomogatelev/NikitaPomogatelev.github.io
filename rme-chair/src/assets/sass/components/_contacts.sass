@@ -88,11 +88,15 @@
         +circe-bold
 
         white-space: nowrap
-        transition: background-color .3s ease
+        transition: background-color .4s ease, box-shadow .4s ease
+        &:active
+            box-shadow: 0 4px 15px rgba(50,101,177,.35)
 
         @media (min-width: 1200px)
             &:hover
-                background-color: darken($color-accent, 10%)
+                background-color: darken($color-accent, 5%)
+                box-shadow: 0 4px 15px rgba(50,101,177,.35)   
+           
         @media (max-width: 827px)
             padding: 16px
             width: 70%
