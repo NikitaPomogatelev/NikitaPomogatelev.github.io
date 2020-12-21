@@ -26,6 +26,8 @@
             display: block
             width: 300px
             position: relative
+            
+                
             &::after
                 content: ''
                 position: absolute
@@ -46,6 +48,11 @@
             +reg
             max-width: 480px
             text-align: left
+            margin-right: 125px
+            margin-left: 31px
+            @media (max-width: 992px)
+                margin: 0
+                
     &-dots
         position: absolute
         bottom: 0
@@ -91,7 +98,14 @@
                 display: none
 
     
-          
+@media (max-width: 456px)
+    .persons
+        &-slider
+            &__name    
+                font-size: 16px
+            &__subtitle
+                font-size: 14px
+                margin-top: 2px
 
   
   
