@@ -5,6 +5,9 @@ $(function() {
     margin: 10,
     nav:false,
     items: 1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause:false
 });
 
 $('.program-slider').owlCarousel({
@@ -12,6 +15,9 @@ $('.program-slider').owlCarousel({
   margin: 10,
   nav:false,
   items: 1,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause:false
 });
 
 $('#persons-slider').owlCarousel({
@@ -22,6 +28,9 @@ $('#persons-slider').owlCarousel({
   dotClass: 'persons-dot',
   dots: true,
   items: 1,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause:false
 });
 
 $('#feedback-slider').owlCarousel({
@@ -47,6 +56,5 @@ $('#feedback-slider').owlCarousel({
   } else {
     $('.news-overlay').fadeOut(0, 0)
   }
-
 
 })
