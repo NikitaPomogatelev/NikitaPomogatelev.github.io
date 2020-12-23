@@ -6,7 +6,7 @@
 
 [#2 Крылатко](https://nikitapomogatelev.github.io/chairs/src/ "Крылатко") - Детские бескаркасные кресла, отображается на мобильниках и мониторах
 
-[#3 RME | Ремонт массажных кресел](https://nikitapomogatelev.github.io/rme-chair/dist/index.html "RME | Ремонт массажных кресел") - Ремонт и обслуживание массажных кресел
+[#3 RME Ремонт массажных кресел](https://nikitapomogatelev.github.io/rme-chair/dist/index.html "RME Ремонт массажных кресел") - Ремонт и обслуживание массажных кресел
 
 ## Многостраничные сайты
 
