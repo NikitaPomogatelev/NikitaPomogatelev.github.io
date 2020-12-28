@@ -8,13 +8,13 @@
     &-light
         position: absolute
         top: 0
-        left: 7%
+        left: 4%
         object-fit: cover
         // min-width: 612px
         // min-height: 500px
         overflow: hidden
-        transform: translateX(-7%)
 
+            
     &__title
         grid-column: 2/3
         grid-row: 1/2
@@ -120,6 +120,13 @@
                 font-size: 16px
         &__image
             grid-column: 3/5
+        &-light
+            left: -2%
+            transform: translateX(-2%)
+@media (max-width: 940px)
+    .header-light
+        left: -3%
+        transform: translateX(-3%)
 
 @media (max-width: 768px)
     .header
@@ -130,7 +137,7 @@
         padding: 0 15px
         &__title
             font-size: 22px
-            margin-top: 110px
+            margin-top: 125px
             text-align: center
             grid-column: 1/4
 
@@ -156,6 +163,11 @@
         &__description
             font-size: 16px
 
+        &-light
+            display: none
+
     .corner
         &-left, &-right
             display: none
+
+
