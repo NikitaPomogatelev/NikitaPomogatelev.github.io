@@ -10,6 +10,12 @@ const burgerMenu = () => {
         } else {
             heroOverlay.style.display = 'none';
         }
+    heroOverlay.addEventListener('click', () => {
+        if (burgerTable.classList.contains('header__menu--active')) {
+            burgerTable.classList.remove('header__menu--active')
+            heroOverlay.style.display = 'none';
+        }
+    });
     });
 
 

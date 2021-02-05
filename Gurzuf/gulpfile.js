@@ -229,6 +229,8 @@ const minSvgSprites = () => {
 }
 
 exports.minSvgSprites = minSvgSprites;
+exports.scriptsBuild = scriptsBuild;
+exports.stylesBuild = stylesBuild;
 
 exports.build = series(clean, parallel(copyHtml, copyFonts, scriptsBuild, resources, minSvgSprites), stylesBuild, tinypng);
 

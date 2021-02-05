@@ -13,7 +13,7 @@
         right: 0
         top: 0
         bottom: 0
-
+        height: 111%
         display: none
 
         background-color: rgba($dark, 0.4)
@@ -132,11 +132,11 @@
         &::after
             content: ''
             position: absolute
-            right: 10px
+            right: 8px
             top: 50%
             width: 18px
             height: 20px
-            background-image: url('../../../assets/img/sprite.svg#calendar')
+            background-image: url('../../assets/img/sprite.svg#calendar')
             background-repeat: no-repeat
             background-position: center center
             background-size: cover
@@ -171,7 +171,7 @@
         width: 20px
         height: 6px
         margin-top: 0
-        background: url('../../../assets/img/sprite.svg#select-arrow')
+        background: url('../../assets/img/sprite.svg#select-arrow')
         background-repeat: no-repeat
         background-position: center
         background-size: cover
@@ -186,5 +186,7 @@
 #choices--type-hotel-kg-item-choice-4
         border: 1px solid red
         display: none
+.choices__item .choices__item--choice .is-selected .choices__item--selectable
+    display: none!important
 
 

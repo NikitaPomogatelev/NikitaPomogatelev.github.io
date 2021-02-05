@@ -16,7 +16,6 @@ const dropDown = () => {
 	function toogleItem(ask){
 		let answer = ask.querySelector('.question__item-descr'); // ask.nextElementSibling  ask.parentNode.querySelector('.asnwer')
         
-		console.log(answer);
 		if(answer.classList.contains('question__item-descr--active')){
 			if('animate' in answer){
 				let animate = answer.animate([
