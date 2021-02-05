@@ -1,0 +1,94 @@
+.question
+    padding: 150px 0
+    @media (max-width: 1200px)
+        padding-top: 75px
+    &__title
+        margin-bottom: 20px
+    &__descr
+        font-size: 22px
+        +raleway-medium
+        margin-bottom: 39px
+        @media (max-width: 1200px)
+            font-size: 18px
+        @media (max-width: 768px)
+            font-size: 16px
+    &__item
+        padding: 20px 10px 20px 100px
+        margin-bottom: 30px
+        background: $white
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11)
+        border-radius: 28px
+        cursor: pointer
+        overflow-anchor: none
+        @media (max-width: 1200px)
+            padding-left: 75px
+        @media (max-width: 768px)
+            padding: 20px
+            padding-left: 45px
+        
+        
+            
+            
+
+    &__item-title
+        position: relative
+        font-size: 24px
+        +raleway-semibold
+        // margin-bottom: 20px
+        @media (max-width: 1200px)
+            font-size: 18px
+        @media (max-width: 768px)
+            font-size: 16px
+            
+        
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: -5%
+
+            width: 34px
+            height: 20px
+
+            background: url(../../../assets/img/sprite.svg#drop-arrow)
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+
+            transform: translateY(-50%) rotate(-90deg)
+            transition: all .2s ease
+
+            @media (max-width: 956px)
+                left: -6%
+            @media (max-width: 768px)
+                left: -35px
+                width: 30px
+                height: 14px
+            
+
+            
+            
+            
+            
+    &__item-descr
+        display: none
+        max-width: 806px
+        line-height: 1.4
+        overflow: hidden
+        transition: all .9s ease
+        @media (max-width: 1200px)
+            font-size: 16px
+        @media (max-width: 768px)
+            font-size: 14px
+
+.question__item.question__item--active
+    padding-bottom: 40px
+    .question__item-title
+        
+    .question__item-title::after
+        transform: translateY(-50%) rotate(0deg)
+    
+.question__item-descr.question__item-descr--active
+    display: block
+    margin-top: 20px
+        

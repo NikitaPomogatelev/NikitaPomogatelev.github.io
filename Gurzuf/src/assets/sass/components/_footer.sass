@@ -1,0 +1,248 @@
+.footer
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    padding-top: 30px
+    color: $white
+    background-color: $blue-accent
+    
+    &__top
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        grid-template-rows: auto
+        @media (max-width: 977px)
+            align-content: center
+
+    &__bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 18px
+        padding-bottom: 20px
+
+        font-size: 15px
+        +raleway-medium
+
+        background-color: $dark-blue
+        @media (max-width: 1085px)
+            font-size: 14px
+        span, a
+            display: block
+        .container
+            display: flex
+            justify-content: space-between
+            width: 100%
+            @media (max-width: 977px)
+                display: flex
+                flex-direction: column-reverse
+                
+                text-align: center
+                a
+                    margin-bottom: 10px
+                    
+                        
+        
+    &__help
+        grid-column: 1/5
+        grid-row: 1/2
+        
+        @media (max-width: 977px)
+            grid-row: 2/3
+            grid-column: span 12
+            
+    
+    &__drop
+        grid-column: 5/10
+        grid-row: 1/2
+        display: grid
+        grid-template-columns: 1fr 2fr
+        @media (max-width: 977px)
+            grid-row: 3/4
+            grid-column: span 12
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 15px
+            pointer-events: auto
+            
+    &__row
+        grid-column: span 12
+        grid-row: 2/3
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        margin-bottom: 10px
+        margin-top: 50px
+        @media (max-width: 977px)
+            grid-row: 5/6
+            grid-column: span 12
+            display: flex
+            flex-direction: column
+    &-socials
+        grid-column: span 12
+        grid-row: 4/5
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 30px
+        @media (max-width: 977px)
+            grid-row: 1/2
+            grid-column: span 12
+    
+    &-socials__link
+        color: $white
+        max-width: 22px
+        max-height: 19px
+        svg
+            object-fit: cover
+            max-width: 22px
+            max-height: 19px
+            fill: currentColor
+    &-socials__link + .footer-socials__link
+        margin-left: 20px
+    &__title
+        margin-bottom: 15px
+        font-size: 22px
+        +raleway-bold
+        @media (max-width: 1085px)
+            font-size: 18px
+            
+    &__drop-list
+        @media (max-width: 977px)
+            display: none
+    &__drop-item
+        font-size: 18px
+        margin-bottom: 10px
+        a
+            font-size: 18px
+            @media (max-width: 1085px)
+                font-size: 16px
+    
+    &__subscribe
+        grid-column: 10/13
+        @media (max-width: 977px)
+            grid-row: 4/5
+            grid-column: span 12
+        
+    &-heading
+        display: flex
+        align-items: center
+        @media (max-width: 977px)
+            display: none
+       
+        
+    &__help-icon
+        display: inline-block
+        width: 53px
+        height: 61px
+        margin-right: 17px
+    &__help-info
+        display: flex
+        align-items: center
+        max-width: 393px
+        width: 95%
+        padding: 15px
+        border: 1px solid $white
+        border-radius: 15px
+        a
+            
+            @media (max-width: 1200px)
+                
+
+                font-size: 12px
+
+        
+        
+        
+        @media (max-width: 977px)
+            margin: 0 auto
+            margin-bottom: 15px
+        @media (max-width: 389px)
+            padding: 9px
+            width: 100%
+        a
+            font-size: 15px
+            +raleway-medium
+            @media (max-width: 1085px)
+                font-size: 14px
+    &__help-info
+        text-align: left
+    &__help-img
+        flex-shrink: 0
+        margin-right: 18px
+
+    &__help-descr
+        max-width: 342px
+        margin-bottom: 40px
+
+        font-size: 18px
+        +raleway-medium
+        a
+            +raleway-bold
+            text-decoration: underline
+        @media (max-width: 1085px)
+            font-size: 16px
+        @media (max-width: 977px)
+            display: none
+            
+            
+    &__help-title
+        font-size: 18px
+        +raleway-bold
+        @media (max-width: 1085px)
+            font-size: 16px
+
+    &__form-inner
+        display: flex
+        margin-bottom: 35px
+        input
+            width: 70%
+            padding: 15px 20px
+            padding-right: 12px
+            margin-right: -11px
+            background: $white
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07)
+            border-radius: 8px
+            @media (max-width: 1085px)
+                width: 80%
+                font-size: 14px
+            @media (max-width: 977px)
+                width: 100%
+            
+    &__btn
+        padding: 13px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $yellow
+        border-radius: 7px
+        svg
+            width: 26px
+            height: 22px
+    &__cards
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__card
+        &--visa
+            width: 62px
+            height: 20px
+        &--mir
+            width: 71px
+            height: 20px
+        &--mastercard
+            width: 114px
+            height: 20px
+    &__card + .footer__card
+        margin-left: 10px
+    &__link
+        @media (max-width: 1085px)
+            font-size: 14px
+        @media (max-width: 977px)
+            text-align: center
+            margin-bottom: 10px
+        
+
+    
+        

@@ -1,0 +1,61 @@
+.about
+    padding: 100px 0
+    @media (max-width: 768px)
+        padding: 70px 0
+    &__title
+        margin-bottom: 47px
+    &-row
+        display: flex
+        justify-content: space-between
+        @media (max-width: 969px)
+            flex-direction: column-reverse
+            align-content: center
+            justify-content: center
+            
+
+        
+    &__image
+        flex-grow: 1
+        width: 43%
+        @media (max-width: 1201px)
+            margin-right: 40px
+        @media (max-width: 969px)
+            width: 100%
+            margin-right: 0
+            img
+                display: block
+                margin: 0 auto
+    &__right
+        flex-grow: 0
+        width: 50%
+        @media (max-width: 969px)
+            width: 100%
+            margin-bottom: 0
+         
+            
+    &__descr
+        max-width: 534px
+        line-height: 1.6
+        letter-spacing: 0.02em
+        margin-bottom: 36px
+        @media (max-width: 1201px)
+            line-height: 1.8
+            font-size: 16px
+        @media (max-width: 969px)
+            line-height: 2
+            height: 161px
+            overflow: hidden
+        
+            
+    &__link-inner
+        text-align: right
+        @media (max-width: 969px)
+            text-align: center
+        
+.link-more.link-more--blue
+    color: $blue-accent
+    
+    .link-more__circle
+        border-color: $blue-accent
+    svg
+        stroke: $blue-accent

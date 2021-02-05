@@ -1,0 +1,108 @@
+.reason
+    padding: 140px 0
+    @media (max-width: 1200px)
+        padding: 75px 0
+        
+    &__title
+        margin-bottom: 25px
+
+    &__descr
+        max-width: 600px
+        margin-bottom: 50px
+        +raleway-medium
+        font-size: 22px
+        color: $mine-shaft
+        @media (max-width: 1200px)
+            font-size: 18px
+
+    .swiper-container
+        overflow: hidden
+        min-height: 530px
+              
+    &-row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        // margin-bottom: 38px
+    &-item
+        position: relative
+        
+        padding: 30px 24px 45px
+        margin: 0 auto
+        margin-top: 15px
+        max-width: 320px
+        text-align: center
+        background: $white
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11)
+        border-radius: 19px
+        @media (max-width: 440px)
+            max-width: 259px
+
+    &-item__social
+        position: absolute
+        top: 30px
+        left: 30px
+        
+    &-item__social-link
+    
+        display: block
+        width: 22px
+        height: 22px
+        color: $blue-accent
+        &--telegram
+            max-width: 20px
+            max-height: 17px
+        & + .reason-item__social-link
+            margin-top: 9px
+            
+        svg
+            display: inline-block
+            fill: currentColor
+            
+
+
+    &-item__img
+        
+        max-width: 100px
+        max-height: 100px
+        margin: 0 auto
+        margin-bottom: 20px
+        @media (max-width: 440px)
+            max-width: 75px
+            max-height: 75px
+    &-item__name
+        +raleway-semibold
+        font-size: 24px
+        margin-bottom: 3px
+        @media (max-width: 440px)
+            font-size: 16px
+    &-item__rating
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 9px
+    &-item__star
+        max-width: 20px
+        max-height: 20px
+        svg
+            display: inline-block
+            max-width: 20px
+            max-height: 20px
+            fill: $yellow
+    &-item__title
+        text-align: left
+        font-size: 18px
+        margin-bottom: 7px
+        @media (max-width: 440px)
+            font-size: 16px
+    &-item__descr
+        text-align: left
+        line-height: 1.5
+        
+        font-size: 16px
+        @media (max-width: 440px)
+            line-height: 2
+            font-size: 12px
+    &-link__inner
+        text-align: right
+        

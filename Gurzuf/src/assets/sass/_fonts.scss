@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src:    local('Raleway Regular'), local('Raleway-Regular'),
+        url('../fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src:    local('Raleway Medium'), local('Raleway-Medium'),
+        url('../fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src:    local('Raleway SemiBold'), local('Raleway-SemiBold'),
+        url('../fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src:    local('Raleway Bold'), local('Raleway-Bold'),
+        url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src:    local('Raleway ExtraBold'), local('Raleway-ExtraBold'),
+        url('../fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway-Black';
+    src:    local('Raleway Black'), local('Raleway-Black'),
+        url('../fonts/Raleway/Raleway-Black.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@mixin raleway-regular {
+    font-family: 'Raleway-Regular', sans-serif;
+}
+@mixin raleway-medium {
+    font-family: 'Raleway-Medium', sans-serif;
+}
+@mixin raleway-semibold {
+    font-family: 'Raleway-SemiBold', sans-serif;
+}
+@mixin raleway-bold {
+    font-family: 'Raleway-Bold', sans-serif;
+}
+@mixin raleway-extrabold {
+    font-family: 'Raleway-ExtraBold', sans-serif;
+}
+@mixin raleway-black {
+    font-family: 'Raleway-Black', sans-serif;
+}
