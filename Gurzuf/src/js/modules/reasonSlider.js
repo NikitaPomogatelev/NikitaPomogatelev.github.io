@@ -8,10 +8,10 @@ const reasonSlider = () => {
         spaceBetween: 47,
         loop: true,
         simulateTouch: false,
-        // navigation: {
-        //     nextEl: '.type-item .item-button-next',
-        //     prevEl: '.type-item .item-button-prev',
-        //   },
+        navigation: {
+            nextEl: '.slider-button-next',
+            prevEl: '.slider-button-prev',
+          },
 
         breakpoints: {
             // when window width is >= 1165px

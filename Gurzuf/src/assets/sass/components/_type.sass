@@ -17,6 +17,35 @@
         justify-content: space-between
         align-items: center
         margin-bottom: 36px
+    &-slider.swiper-container
+        position: relative
+        .slider-button-prev,
+        .slider-button-next
+            position: absolute
+            top: 50%
+            left: 3%
+            cursor: pointer
+            display: none
+            align-items: center
+            justify-content: center
+            width: 13px
+            height: 26px
+            pointer-events: none
+            z-index: 10
+            transform: translateY(-50%) rotate(180deg)
+            svg
+                width: 13px
+                height: 26px
+            @media (max-width: 1165px)
+                display: flex
+                pointer-events: auto
+                
+        .slider-button-next
+            left: auto
+            right: 3%
+            transform: translateY(-50%) rotate(0deg)
+
+
     &-item
         position: relative
 
@@ -42,7 +71,9 @@
             strong
                 display: block
                 +raleway-extrabold
+
         .swiper-container
+            position: relative
             overflow: hidden
             
         .item-button-prev,

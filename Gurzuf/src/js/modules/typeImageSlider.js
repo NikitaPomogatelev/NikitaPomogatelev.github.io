@@ -1,7 +1,7 @@
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation} from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation]);
 
 const typeImageSlider = () => {
     const typeImages = new Swiper('.type-item .swiper-container', {

@@ -1,19 +1,19 @@
 import typeImageSlider from "./typeImageSlider"
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation} from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation]);
 
 const typeSlider = () => {
-    const mainTypeSlider = new Swiper('.type .swiper-container', {
+    const mainTypeSlider = new Swiper('.type-slider.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 8,
         loop: true,
         simulateTouch: false,
-        // navigation: {
-        //     nextEl: '.type-item .item-button-next',
-        //     prevEl: '.type-item .item-button-prev',
-        //   },
+        navigation: {
+            nextEl: '.slider-button-next',
+            prevEl: '.slider-button-prev',
+          },
 
         breakpoints: {
             // when window width is >= 1165px
