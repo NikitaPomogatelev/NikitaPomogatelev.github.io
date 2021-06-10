@@ -8,10 +8,10 @@
 
 [#3 RME Ремонт массажных кресел](https://nikitapomogatelev.github.io/rme-chair/dist/index.html "RME Ремонт массажных кресел") - Ремонт и обслуживание массажных кресел
 
-[#4 DESIGN.LOFT](https://nikitapomogatelev.github.io/designloft/src/ "Дизайн и ремонт квартир в стиле Лофт") - Верстка в рамках учебного проекта, отображается на любых устройствах
+[#4 DESIGN.LOFT](https://nikitapomogatelev.github.io/designloft/src/index.html "Дизайн и ремонт квартир в стиле Лофт") - Верстка в рамках учебного проекта, отображается на любых устройствах
 > Дизайн макет мне предоставил веб-дизайнер [ссылка на страницу вконтакте: Дмитрий Шинкаренко](https://vk.com/shinkarenkodmt "Дмитрий шинкаренко ссылка на вк")
 
-[#5 Gurzuf](https://nikitapomogatelev.github.io/Gurzuf/dist/index.html "Незабываемый отдых в отеле") - Незабываемый отдых в отеле Gurzuf
+[#5 Gurzuf](https://nikitapomogatelev.github.io/gurzuf/dist/index.html "Незабываемый отдых в отеле") - Незабываемый отдых в отеле Gurzuf
 
 [#6 autoCRM](https://nikitapomogatelev.github.io/autoCRM/dist/index.html "Внедрение autoCRM в ваш бизнес") - Внедрение autoCRM в ваш бизнес
 
