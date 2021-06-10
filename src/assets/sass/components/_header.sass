@@ -1,0 +1,84 @@
+.header
+    position: relative
+    background-color: $white
+    padding: 10px 0
+    border-bottom: 1px solid rgba($dark, 0.3 )
+    margin-bottom: 30px
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 725px)
+            flex-direction: column
+        
+    &-left
+        display: flex
+        align-items: center
+        @media (max-width: 725px)
+            margin-bottom: 25px
+
+    
+    &__image
+        max-width: 85px
+        max-height: 85px
+        border: 2px solid $blue
+        margin-right: 30px
+        border-radius: 50%
+        overflow: hidden
+    &__name
+        +adobe-bold
+        font-size: 24px
+        @media (max-width: 1067px)
+            font-size: 18
+    &__list
+        display: flex
+        align-items: top
+    &__phone
+        display: flex
+        flex-direction: column
+        padding-left: 30px
+
+.header__item + .header__item
+    margin-left: 15px      
+
+.header__link
+    max-width: 22px
+    max-height: 22px
+    svg
+        fill: currentColor
+        max-width: 22px
+        max-height: 22px
+.header__link--whatsapp
+    color: #40B66F
+.header__link--telegram
+    color: $blue
+.header__link--phone
+    position: relative
+    +adobe-bold
+    font-size: 20px
+    &::before
+        content: ''
+        position: absolute
+        left: -25px
+        top: 2px
+        display: inline-block
+        width: 20px
+        height: 20px
+        background-image: url('../../assets/img/sprite.svg#phone-icon')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    @media (max-width: 1067px)
+        font-size: 16px
+.header__link--email
+    position: relative
+    font-size: 16px
+
+    
+    
+
+
+
+    
+
+

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'AdobeClean-Regular';
+    src:    local('AdobeClean Regular'), local('AdobeClean-Regular'),
+        url('../fonts/AdobeClean-Regular.woff2') format('woff2'),
+        url('../fonts/AdobeClean-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdobeClean-Bold';
+    src:    local('AdobeClean Bold'), local('AdobeClean-Bold'),
+        url('../fonts/AdobeClean-Bold.woff2') format('woff2'),
+        url('../fonts/AdobeClean-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@mixin adobe-regular {
+    font-family: 'AdobeClean-Regular', sans-serif;
+}
+@mixin adobe-bold {
+    font-family: 'AdobeClean-Bold', sans-serif;
+}
+
